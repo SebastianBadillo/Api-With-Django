@@ -9,5 +9,5 @@ class ProductViewSet(viewsets.ModelViewSet):
     """
     API-REST endpoint for car model, allows to perform CRUD operations
     """
-    queryset = Product.objects.all().order_by('-end_date')
+    queryset = Product.objects.all()
     serializer_class = ProductSerializer
